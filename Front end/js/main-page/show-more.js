@@ -1,14 +1,24 @@
-const btn = document.querySelector(".Show-more-icon");
+const moreBtn = document.querySelector(".Show-icon.more");
+const lessBtn = document.querySelector(".Show-icon.less");
 const hiddenItems = document.querySelectorAll(".subscription-item.hidden");
 
-let isExpanded = false;
+hiddenItems.forEach(item => item.style.display = "none");
+lessBtn.style.display = "none";
 
-btn.addEventListener("click", () => {
-  isExpanded = !isExpanded;
-
+moreBtn.addEventListener("click", () => {
   hiddenItems.forEach(item => {
-    item.style.display = isExpanded ? "flex" : "none";
+    item.style.display = "flex";
   });
 
-  btn.textContent = isExpanded ? "Show less" : "Show more";
+  moreBtn.style.display = "none";
+  lessBtn.style.display = "flex";
+});
+
+lessBtn.addEventListener("click", () => {
+  hiddenItems.forEach(item => {
+    item.style.display = "none";
+  });
+
+  lessBtn.style.display = "none";
+  moreBtn.style.display = "flex";
 });
