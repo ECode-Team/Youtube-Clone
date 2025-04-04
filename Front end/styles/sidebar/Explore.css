@@ -2,7 +2,7 @@
   --Etext-color: #000000;
   --Emain-color: #ffffff;
   --Ebutton-color: rgb(244, 244, 244);
-  --Ehover-color: rgb(228, 228, 228);
+  --Ehover-color: rgb(240, 240, 240);
   --Eicon-color: 0;
 }
 
@@ -10,7 +10,7 @@
   --Etext-color: white;
   --Emain-color: #0f0f0f;
   --Ebutton-color: rgb(42, 42, 42);
-  --Ehover-color: rgb(60, 60, 60);
+  --Ehover-color: rgba(49, 49, 49, 0.705);
   --Eicon-color: 1;
 }
 

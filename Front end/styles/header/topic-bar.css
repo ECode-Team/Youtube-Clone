@@ -3,7 +3,7 @@
   --tpmain-color: #ffffff;
   --tpbutton-color: rgb(244, 244, 244);
   --tphover-color: rgb(228, 228, 228);
-  --tpicon-color: black;
+  --tpicon-color: 0;
 }
 
 .dark-mode {
@@ -11,7 +11,7 @@
   --tpmain-color: #0f0f0f;
   --tpbutton-color: rgb(42, 42, 42);
   --tphover-color: rgb(60, 60, 60);
-  --tpicon-color: white;
+  --tpicon-color: 1;
 }
 
 .topic-bar-container {
@@ -19,7 +19,7 @@
   font-family: Roboto, Arial;
   font-weight: 500;
   display: flex;
-  height: 60px; /* distance to navbar */
+  height: 60px;
   align-items: center;
   position: fixed;
   right: 0;
@@ -29,30 +29,28 @@
   background-color: var(--tpmain-color);
 }
 
-.topic-bar-container.closed{
+.topic-bar-container.closed {
   left: 80px;
 }
 
-.topic-bar-container::before
-{
-  content: '';
-  position: absolute;  
-  left: 40px; 
+.topic-bar-container::before {
+  content: "";
+  position: absolute;
+  left: 40px;
   width: 40px;
-  height: 70%; 
+  height: 70%;
   background: linear-gradient(to right, var(--tpmain-color), transparent);
-  pointer-events: none; 
+  pointer-events: none;
 }
 
-.topic-bar-container::after
-{
-  content: '';
-  position: absolute;  
-  right: 40px; 
-  width: 40px;
-  height: 70%; 
+.topic-bar-container::after {
+  content: "";
+  position: absolute;
+  right: 40px;
+  width:180px;
+  height: 70%;
   background: linear-gradient(to left, var(--tpmain-color), transparent);
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .topic-bar {
@@ -61,7 +59,7 @@
   padding: 15px 7px;
 }
 
-.topic{
+.topic {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -87,21 +85,31 @@
   padding: 5px 8px;
   border-radius: 50px;
   cursor: pointer;
+  z-index: 1010;
 }
+
+.right-section-p {
+  display: flex;
+  position: fixed;
+  width: 55px;
+  align-items: center;
+  background-color: var(--tpmain-color);
+  z-index: 1009;
+  right: 0px;
+}
+
 .scroll-button:hover {
   background-color: var(--tphover-color);
 }
 
-.scroll-button svg
-{
-  fill: var(--tpicon-color);
+.scroll-button img {
+  filter: invert(var(--tpicon-color));
   margin-top: 3px;
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-    .topic-bar-container
-    {
-      left: 150px;
-    }
+  .topic-bar-container {
+    left: 150px;
   }
+}

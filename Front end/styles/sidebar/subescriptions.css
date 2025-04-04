@@ -2,7 +2,7 @@
   --SBtext-color: #000000;
   --SBmain-color: #ffffff;
   --SBbutton-color: rgb(244, 244, 244);
-  --SBhover-color: rgb(228, 228, 228);
+  --SBhover-color: rgb(240, 240, 240);
   --SBicon-color: 0;
 }
 
@@ -10,7 +10,7 @@
   --SBtext-color: white;
   --SBmain-color: #0f0f0f;
   --SBbutton-color: rgb(42, 42, 42);
-  --SBhover-color: rgb(60, 60, 60);
+  --SBhover-color: rgba(49, 49, 49, 0.705);
   --SBicon-color: 1;
 }
 
@@ -93,6 +93,7 @@
   height: auto;
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
+  color: var(--SBtext-color);
 }
 
 .Show-icon img {
