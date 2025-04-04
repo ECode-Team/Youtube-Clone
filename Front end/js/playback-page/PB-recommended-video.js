@@ -22,15 +22,12 @@ async function loadVideos() {
             </div>
             <div class="ellipsis"><img src="imgs/Icons/playback page/more-icon.png"></div>
         `;
-
                 // Make VideoCard child of VideoList
                 VideoList.appendChild(VideoCard);
-                console.log(VideoCard);
             });
         })
     }
 
     GenerateVideoCards();
 }
-
 loadVideos()

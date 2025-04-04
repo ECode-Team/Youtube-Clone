@@ -25,7 +25,7 @@ searchInput.addEventListener('input', (event) => {
     const sendResult = () => {
         suggestionContainer.innerHTML = "";
         searchInput.value = "";
-        window.location.href = `search.html?q=${encodeURIComponent(JSON.stringify(value))}`;
+        window.location.href = `search.html?q=${encodeURIComponent(value)}`;
     }
 
     // Generate suggestion items
@@ -43,9 +43,6 @@ searchInput.addEventListener('input', (event) => {
 
     searchButton.addEventListener('click', (event) => {
         event.preventDefault();
-        const searchValue = searchInput.value.trim();
-        if (searchValue) {
-            sendResult();
-        }
+        sendResult();
     });
 })
