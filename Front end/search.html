@@ -1,0 +1,369 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube search</title>
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Noto+Nastaliq+Urdu:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Link css -->
+    <link rel="stylesheet" href="styles/sidebar/subescriptions.css">
+    <link rel="stylesheet" href="styles/sidebar/Explore.css">
+    <link rel="stylesheet" href="styles/sidebar/more-form.css">
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header/profile-menu.css" />
+    <link rel="stylesheet" href="styles/header/navbar.css" />
+    <link rel="stylesheet" href="styles/sidebar/sidebar.css" />
+
+    <!-- link Google -->
+    <script src="https://kit.fontawesome.com/c745381312.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="navbar">
+        <!-- left -->
+        <div class="left-section">
+            <button class="menu-btn">
+                <img class="nav-icon" src="imgs/Icons/Header/menu.svg" alt="">
+            </button>
+            <a href="index.html">
+                <div class="youtube-logo">
+                    <img class="nav-icon" src="imgs/Icons/Header/Youtube.svg" alt="">
+                </div>
+            </a>
+        </div>
+        <!-- middle -->
+        <div class="middle-section">
+            <form class="cointainer">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" name="q" class="search-input" />
+                    <div class="suggestion-container"></div>
+                    <button class="serch-icon">
+                        <img class="nav-icon" src="imgs/Icons/Header/Search.svg" alt="">
+                        <div class="tooltips">Search</div>
+                    </button>
+                </div>
+            </form>
+            <div class="mic-icon">
+                <button>
+                    <i class="fa-solid fa-microphone"></i>
+                    <div class="tooltips">Search with your vioce</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- rigth -->
+        <div class="rigth-section">
+            <div class="plus-btn">
+                <img class="nav-icon" src="imgs/Icons/Header/Create.svg" alt="">
+                <p class="create">Create</p>
+            </div>
+            <button class="bell-btn">
+                <div class="notification-container">
+                    <img class="bell" src="imgs/Icons/Header/Notification.svg" alt="">
+                    <div class="notification-icon">3</div>
+                    <div class="tooltips">Notifications</div>
+                </div>
+            </button>
+            <!-- user-profile -->
+            <div class="profile-container">
+                <!-- Profile Icon -->
+                <div class="profile-icon">
+                    <img src="imgs/profiles/Untitled-1.psd6.png" class="profile-pic" />
+                </div>
+
+                <div class="theme-toggle">
+                    <div class="title">
+                        <img class="theme-back-flash" src="imgs/Icons/Header/Profile-menu/back-flash.svg" alt="">
+                        <span class="theme-toggle-title">Appearance</span>
+                    </div>
+                    <hr class="menu-hr" />
+                    <div class="Appearance-list">
+                        <div class="theme-Mode device">
+                            <img class="theme-tick device" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+                            <span>Use device theme</span>
+                        </div>
+                        <div class="theme-Mode dark">
+                            <img class="theme-tick dark" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+                            <span>Dark theme</span>
+                        </div>
+                        <div class="theme-Mode light">
+                            <img class="theme-tick light" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+                            <span>Light theme</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown Menu -->
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="imgs/profiles/Untitled-1.psd6.png" class="dropdown-pic" />
+                        <div>
+                            <h3 class="user-name">Pico</h3>
+                            <p class="user-id">@picobax369</p>
+                            <a href="#" class="view-channel-link">View your channel</a>
+                        </div>
+                    </div>
+                    <hr class="menu-hr" />
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <img src="imgs/Icons/Header/Profile-menu/Google-Acount.svg">Google Account
+                        </li>
+                        <li class="menu-item-2">
+                            <img src="imgs/Icons/Header/Profile-menu/Switch-Account.svg">
+                            Switch account
+                            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+                        </li>
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Sign-out.svg">Sign out</li>
+                        <hr class="menu-hr" />
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/studio.svg" alt="">YouTube Studio
+                        </li>
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/membership.svg" alt="">Purchases
+                            and
+                            memberships</li>
+                        <hr class="menu-hr" />
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Data.svg" alt="">Your data in
+                            YouTube</li>
+                        <li class="menu-item-2 Appearance">
+                            <img class="icon-svg" src="imgs/Icons/Header/Profile-menu/Appearance.svg">
+                            Appearance: Device theme
+                            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+                        </li>
+                        <li class="menu-item-2">
+                            <img src="imgs/Icons/Header/Profile-menu/Language.svg">
+                            Language: English
+                            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+                        </li>
+                        <li class="menu-item-2">
+                            <img src="imgs/Icons/Header/Profile-menu/Restricted.svg" alt="">
+                            Restricted Mode: Off
+                            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+                        </li>
+                        <li class="menu-item-2">
+                            <img src="imgs/Icons/Header/Profile-menu/Location.svg">
+                            Location: United States
+                            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+                        </li>
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Keyboard.svg">Keyboard shortcuts
+                        </li>
+                        <hr class="menu-hr" />
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Setting.svg" alt="">Settings</li>
+                        <hr class="menu-hr" />
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Help.svg">Help</li>
+                        <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Feedback.svg" alt="">Send
+                            feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar-container" tabindex="0">
+        <div class="section-section">
+            <a href="index.html">
+                <div class="sidebar-links-home">
+                    <img class="sidebar-icon" src="imgs/Icons/sidebar/Home.svg">
+                    <div class="sidebar-text">Home</div>
+                </div>
+            </a>
+            <a href="short.html">
+                <div class="sidebar-links">
+                    <img class="sidebar-icon" src="imgs/Icons/sidebar/Shorts.svg">
+                    <div class="sidebar-text">Shorts</div>
+                </div>
+            </a>
+            <div class="sidebar-links">
+                <img class="sidebar-icon" src="imgs/Icons/sidebar/Subscription.svg">
+                <div class="sidebar-text">Subscriptions</div>
+            </div>
+
+            <hr class="hr-between" />
+
+            <h2 class="you-icon">You <img src="imgs/Icons/sidebar/You.svg"></h2>
+
+            <!-- for rispansive -->
+            <div class="for-delete">
+
+                <div class="sidebar-links-A">
+                    <img class="sidebar-icon" src="imgs/Icons/sidebar/History.svg">
+                    <div class="sidebar-text">History</div>
+                </div>
+                <div class="sidebar-links-A">
+                    <img class="sidebar-icon" src="imgs/Icons/sidebar/Playlist.svg">
+                    <div class="sidebar-text">Playlists</div>
+                </div>
+                <div class="sidebar-links-A">
+                    <img class="sidebar-icon" src="imgs/Icons/sidebar/Your-videos.svg">
+                    <div class="sidebar-text">Your videos</div>
+                </div>
+                <div class="sidebar-links-A">
+                    <img class="sidebar-icon" src="imgs/Icons/sidebar/Watch-later.svg">
+                    <div class="sidebar-text">Watch later</div>
+                </div>
+                <div class="sidebar-links-A">
+                    <img class="sidebar-icon" src="imgs/Icons/sidebar/Liked-videos.svg">
+                    <div class="sidebar-text">Liked videos</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- for rispansive -->
+        <div class="for-delete">
+            <hr />
+            <!-- subescriptions -->
+            <div class="section-section">
+                <h2 class="subscription-icon">Subscriptions</h2>
+                <ul class="subscription-list">
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/car_profile.jpg" alt="Channel Icon">
+                        <span>HitMakers</span><span class="live-icon-r">●</span>
+                    </li>
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/billie_profile.jpg" alt="Channel Icon">
+                        <span>BillieEilish</span>
+                    </li>
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/channels3_profile.jpg" alt="Channel Icon">
+                        <span>God Bless Bitcoin</span><span class="live-icon-b">●</span>
+                    </li>
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/channels4_profile.jpg" alt="Channel Icon">
+                        <span>Rubik's</span>
+                    </li>
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/channels5_profile.jpg" alt="Channel Icon">
+                        <span>Catur Newbie</span>
+                    </li>
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/channels6_profile.jpg" alt="Channel Icon">
+                        <span>Essential Classics</span><span class="live-icon-b">●</span>
+                    </li>
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/channels9_profile.jpg" alt="Channel Icon">
+                        <span>James Bartholomew</span><span class="live-icon-b">●</span>
+                    </li>
+                    <li class="subscription-item">
+                        <img src="imgs/profiles/unnamed9.jpg" alt="Channel Icon">
+                        <span>Top Gear</span>
+                    </li>
+                </ul>
+                <div class="Show-more-icon"><img src="imgs/Icons/sidebar/Show-more.svg" alt=""> Show more</div>
+            </div>
+
+            <hr />
+
+            <!-- Explore -->
+            <div class="section-section">
+                <h2 class="Explore">Explore</h2>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Trending.svg">
+                    <div class="Explore-text">Trending</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Musics.svg">
+                    <div class="Explore-text">Music</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Movie.svg">
+                    <div class="Explore-text">Movies & TY</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Movie.svg">
+                    <div class="Explore-text">Live</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Gaming.svg">
+                    <div class="Explore-text">Gaming</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/News.svg">
+                    <div class="Explore-text">News</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Sports.svg" alt="">
+                    <div class="Explore-text">Sports</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Learn.svg">
+                    <div class="Explore-text">Learning</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Fashion.svg">
+                    <div class="Explore-text">Fashion & Beauty</div>
+                </div>
+                <div class="Explore-links">
+                    <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Podcats.svg">
+                    <div class="Explore-text">Podcasts</div>
+                </div>
+            </div>
+
+            <hr />
+
+            <!-- More form youtube -->
+            <div class="section-section">
+                <h2 class="more-form">More form Youtube</h2>
+                <div class="more-form-link">
+                    <img src="imgs/Icons/sidebar/more-form/youtube-premium.svg" />
+                    <div>YouTbe Premium</div>
+                </div>
+                <div class="more-form-link">
+                    <img src="imgs/Icons/sidebar/more-form/youtube-studio.svg" />
+                    <div>YouTbe Studio</div>
+                </div>
+                <div class="more-form-link">
+                    <img src="imgs/Icons/sidebar/more-form/youtube-music.svg" />
+                    <div>YouTbe Music</div>
+                </div>
+                <div class="more-form-link">
+                    <img src="imgs/Icons/sidebar/more-form/youtube-kids.svg" />
+                    <div>YouTube Kids</div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="section-section">
+                <div class="more-form-link">
+                    <img class="More-icons" src="imgs/Icons/sidebar/Explore/Setting.svg">
+                    <div>Settings</div>
+                </div>
+                <div class="more-form-link">
+                    <img class="More-icons" src="imgs/Icons/sidebar/Explore/Report.svg">
+                    <div>Report history</div>
+                </div>
+                <div class="more-form-link">
+                    <img class="More-icons" src="imgs/Icons/sidebar/Explore/Help.svg">
+                    <div>Help</div>
+                </div>
+                <div class="more-form-link">
+                    <img class="More-icons" src="imgs/Icons/sidebar/Explore/Feedback.svg">
+                    <div>Send feedback</div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="about">
+                <div>About Press Copyrigh tContact us Creators Advertise Developers</div>
+                <div>Terms Privacy Policy & Safety How YouTube worksTest new features</div>
+                <div>© 2025 Google LLC</div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+    <script type="module" src="js/main-page/sidebar.js"></script>
+    <script type="module" src="js/main-page/Search.js"></script>
+    <script src="js/Header/profile-menu.js"></script>
+    <script type="module" src="js/Search/genSearchItem.js"></script>
+</body>
+
+</html>

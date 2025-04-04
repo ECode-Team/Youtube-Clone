@@ -2,6 +2,7 @@
   --Ntext-color: #000000;
   --Nmain-color: #ffffff;
   --Nbutton-color: rgb(244, 244, 244);
+  --Nsearch-color: rgb(244, 244, 244);
   --Nhover-color: rgb(228, 228, 228);
   --Nicon-color: 0;
 }
@@ -10,6 +11,7 @@
   --Ntext-color: white;
   --Nmain-color: #0f0f0f;
   --Nbutton-color: rgb(42, 42, 42);
+  --Nsearch-color: rgb(32, 32, 32);
   --Nhover-color: rgb(60, 60, 60);
   --Nicon-color: 1;
 }
@@ -76,6 +78,7 @@
 }
 
 .search-bar {
+  position: relative;
   flex: 1;
   display: flex;
   border: solid 1px var(--Nhover-color);
@@ -98,6 +101,48 @@
   width: 0;
 }
 
+.suggestion-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  max-height: 500px;
+  margin-top: 5px;
+  padding: 12px 0 12px 0;
+  background-color: var(--Nsearch-color);
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.suggestion-container.active {
+  display: block;
+}
+
+.suggestion-item {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  list-style: none;
+  padding: 6px 0 6px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--Ntext-color);
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background-color: var(--Nhover-color);
+}
+.suggestion-item img {
+  margin: 0 15px;
+  width: 20px;
+  filter: invert(var(--Nicon-color));
+}
+.suggestion-search-icon {
+  filter: invert(var(--Nicon-color));
+  margin: 0 12px 0 12px;
+  width: 20px;
+}
 .serch-icon {
   padding: 7px 19px;
   border: none;
