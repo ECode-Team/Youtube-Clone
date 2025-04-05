@@ -8,7 +8,6 @@
 
   <!-- Css Links -->
   <link rel="stylesheet" href="styles/header/navbar.css" />
-  <link rel="stylesheet" href="styles/general.css" />
   <link rel="stylesheet" href="styles/header/profile-menu.css" />
   <link rel="stylesheet" href="styles/playback page/PB-topic-bar.css" />
   <link rel="stylesheet" href="styles/playback page/PB-comments-header.css" />
@@ -23,6 +22,7 @@
   <link rel="stylesheet" href="styles/sidebar/more-form.css">
   <link rel="stylesheet" href="styles/sidebar/sidebar.css" />
   <link rel="stylesheet" href="styles/playback page/PB-share.css" />
+  <link rel="stylesheet" href="styles/general.css" />
 
   <!--Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +47,8 @@
       </button>
       <a href="index.html">
         <div class="youtube-logo">
-          <img class="nav-icon" src="imgs/Icons/Header/Youtube.svg" alt="">
+          <img src="imgs/Icons/Header/Youtube-logo.svg" alt="">
+          <img class="nav-icon" src="imgs/Icons/Header/Youtube-text.svg" alt="">
         </div>
       </a>
     </div>
@@ -55,122 +56,122 @@
     <div class="middle-section">
       <form class="cointainer">
         <div class="search-bar">
-          <input type="text" placeholder="Search" name="q" class="search-input" />
-          <div class="suggestion-container"></div>
-          <button class="serch-icon">
+          <input type="text" placeholder="Search" name="q" />
+          <button type="submit" class="serch-icon">
             <img class="nav-icon" src="imgs/Icons/Header/Search.svg" alt="">
             <div class="tooltips">Search</div>
           </button>
-        </div>
       </form>
-      <div class="mic-icon">
-        <button>
-          <i class="fa-solid fa-microphone"></i>
-          <div class="tooltips">Search with your vioce</div>
-        </button>
-      </div>
     </div>
-
-    <!-- rigth -->
-    <div class="rigth-section">
-      <div class="plus-btn">
-        <img class="nav-icon" src="imgs/Icons/Header/Create.svg" alt="">
-        <p class="create">Create</p>
-      </div>
-      <button class="bell-btn">
-        <div class="notification-container">
-          <img class="bell" src="imgs/Icons/Header/Notification.svg" alt="">
-          <div class="notification-icon">3</div>
-          <div class="tooltips">Notifications</div>
-        </div>
+    <div class="mic-icon">
+      <button>
+        <i class="fa-solid fa-microphone"></i>
+        <div class="tooltips">Search with your vioce</div>
       </button>
-      <!-- user-profile -->
-      <div class="profile-container">
-        <!-- Profile Icon -->
-        <div class="profile-icon">
-          <img src="imgs/profiles/Untitled-1.psd6.png" class="profile-pic" />
-        </div>
+    </div>
+  </div>
 
-        <div class="theme-toggle">
-          <div class="title">
-            <img class="theme-back-flash" src="imgs/Icons/Header/Profile-menu/back-flash.svg" alt="">
-            <span class="theme-toggle-title">Appearance</span>
-          </div>
-          <hr class="menu-hr" />
-          <div class="Appearance-list">
-            <div class="theme-Mode device">
-              <img class="theme-tick device" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
-              <span>Use device theme</span>
-            </div>
-            <div class="theme-Mode dark">
-              <img class="theme-tick dark" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
-              <span>Dark theme</span>
-            </div>
-            <div class="theme-Mode light">
-              <img class="theme-tick light" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
-              <span>Light theme</span>
-            </div>
-          </div>
-        </div>
+  <!-- rigth -->
+  <div class="rigth-section">
+    <div class="plus-btn">
+      <img class="nav-icon" src="imgs/Icons/Header/Create.svg" alt="">
+      <p class="create">Create</p>
+    </div>
+    <button class="bell-btn">
+      <div class="notification-container">
+        <img class="bell" src="imgs/Icons/Header/Notification.svg" alt="">
+        <div class="notification-icon">3</div>
+        <div class="tooltips">Notifications</div>
+      </div>
+    </button>
+    <!-- user-profile -->
+    <div class="profile-container">
+      <!-- Profile Icon -->
+      <div class="profile-icon">
+        <img src="imgs/profiles/Untitled-1.psd6.png" class="profile-pic" />
+      </div>
 
-        <!-- Dropdown Menu -->
-        <div class="profile-menu">
-          <div class="user-info">
-            <img src="imgs/profiles/Untitled-1.psd6.png" class="dropdown-pic" />
-            <div>
-              <h3 class="user-name">Pico</h3>
-              <p class="user-id">@picobax369</p>
-              <a href="#" class="view-channel-link">View your channel</a>
-            </div>
-          </div>
-          <hr class="menu-hr" />
-          <ul class="menu-list">
-            <li class="menu-item">
-              <img src="imgs/Icons/Header/Profile-menu/Google-Acount.svg">Google Account
-            </li>
-            <li class="menu-item-2">
-              <img src="imgs/Icons/Header/Profile-menu/Switch-Account.svg">
-              Switch account
-              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-            </li>
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Sign-out.svg">Sign out</li>
-            <hr class="menu-hr" />
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/studio.svg" alt="">YouTube Studio</li>
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/membership.svg" alt="">Purchases and
-              memberships</li>
-            <hr class="menu-hr" />
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Data.svg" alt="">Your data in YouTube</li>
-            <li class="menu-item-2 Appearance">
-              <img class="icon-svg" src="imgs/Icons/Header/Profile-menu/Appearance.svg">
-              Appearance: Device theme
-              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-            </li>
-            <li class="menu-item-2">
-              <img src="imgs/Icons/Header/Profile-menu/Language.svg">
-              Language: English
-              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-            </li>
-            <li class="menu-item-2">
-              <img src="imgs/Icons/Header/Profile-menu/Restricted.svg" alt="">
-              Restricted Mode: Off
-              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-            </li>
-            <li class="menu-item-2">
-              <img src="imgs/Icons/Header/Profile-menu/Location.svg">
-              Location: United States
-              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-            </li>
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Keyboard.svg">Keyboard shortcuts</li>
-            <hr class="menu-hr" />
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Setting.svg" alt="">Settings</li>
-            <hr class="menu-hr" />
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Help.svg">Help</li>
-            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Feedback.svg" alt="">Send feedback</li>
-          </ul>
+      <div class="theme-toggle">
+        <div class="title">
+          <img class="theme-back-flash" src="imgs/Icons/Header/Profile-menu/back-flash.svg" alt="">
+          <span class="theme-toggle-title">Appearance</span>
         </div>
+        <hr class="menu-hr" />
+        <div class="Appearance-list">
+          <div class="theme-Mode device">
+            <img class="theme-tick device" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+            <span>Use device theme</span>
+          </div>
+          <div class="theme-Mode dark">
+            <img class="theme-tick dark" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+            <span>Dark theme</span>
+          </div>
+          <div class="theme-Mode light">
+            <img class="theme-tick light" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+            <span>Light theme</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dropdown Menu -->
+      <div class="profile-menu">
+        <div class="user-info">
+          <img src="imgs/profiles/Untitled-1.psd6.png" class="dropdown-pic" />
+          <div>
+            <h3 class="user-name">Pico</h3>
+            <p class="user-id">@picobax369</p>
+            <a href="#" class="view-channel-link">View your channel</a>
+          </div>
+        </div>
+        <hr class="menu-hr" />
+        <ul class="menu-list">
+          <li class="menu-item">
+            <img src="imgs/Icons/Header/Profile-menu/Google-Acount.svg">Google Account
+          </li>
+          <li class="menu-item-2">
+            <img src="imgs/Icons/Header/Profile-menu/Switch-Account.svg">
+            Switch account
+            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+          </li>
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Sign-out.svg">Sign out</li>
+          <hr class="menu-hr" />
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/studio.svg" alt="">YouTube Studio</li>
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/membership.svg" alt="">Purchases and
+            memberships</li>
+          <hr class="menu-hr" />
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Data.svg" alt="">Your data in YouTube</li>
+          <li class="menu-item-2 Appearance">
+            <img class="icon-svg" src="imgs/Icons/Header/Profile-menu/Appearance.svg">
+            Appearance: Device theme
+            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+          </li>
+          <li class="menu-item-2">
+            <img src="imgs/Icons/Header/Profile-menu/Language.svg">
+            Language: English
+            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+          </li>
+          <li class="menu-item-2">
+            <img src="imgs/Icons/Header/Profile-menu/Restricted.svg" alt="">
+            Restricted Mode: Off
+            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+          </li>
+          <li class="menu-item-2">
+            <img src="imgs/Icons/Header/Profile-menu/Location.svg">
+            Location: United States
+            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+          </li>
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Keyboard.svg">Keyboard shortcuts</li>
+          <hr class="menu-hr" />
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Setting.svg" alt="">Settings</li>
+          <hr class="menu-hr" />
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Help.svg">Help</li>
+          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Feedback.svg" alt="">Send feedback</li>
+        </ul>
       </div>
     </div>
   </div>
+  </div>
+
   <!-- sidebar -->
   <div class="cover-black"></div>
   <div class="sidebar-container close" tabindex="0">
@@ -179,8 +180,9 @@
         <img src="imgs/Icons/Header/menu.svg" alt="">
       </button>
       <a href="index.html">
-        <div class="youtube-logo">
-          <img class="nav-icon" src="imgs/Icons/Header/Youtube.svg" alt="">
+        <div class="youtube-logo-sid">
+          <img src="imgs/Icons/Header/Youtube-logo.svg" alt="">
+          <img class="nav-icon" src="imgs/Icons/Header/Youtube-text.svg" alt="">
         </div>
       </a>
     </div>
@@ -206,170 +208,170 @@
 
       <h2 class="you-icon">You <img src="imgs/Icons/sidebar/You.svg"></h2>
 
-      <div class="sidebar-links-A">
-        <img class="sidebar-icon" src="imgs/Icons/sidebar/History.svg">
-        <div class="sidebar-text">History</div>
+        <div class="sidebar-links-A">
+          <img class="sidebar-icon" src="imgs/Icons/sidebar/History.svg">
+          <div class="sidebar-text">History</div>
+        </div>
+        <div class="sidebar-links-A">
+          <img class="sidebar-icon" src="imgs/Icons/sidebar/Playlist.svg">
+          <div class="sidebar-text">Playlists</div>
+        </div>
+        <div class="sidebar-links-A">
+          <img class="sidebar-icon" src="imgs/Icons/sidebar/Your-videos.svg">
+          <div class="sidebar-text">Your videos</div>
+        </div>
+        <div class="sidebar-links-A">
+          <img class="sidebar-icon" src="imgs/Icons/sidebar/Watch-later.svg">
+          <div class="sidebar-text">Watch later</div>
+        </div>
+        <div class="sidebar-links-A">
+          <img class="sidebar-icon" src="imgs/Icons/sidebar/Liked-videos.svg">
+          <div class="sidebar-text">Liked videos</div>
+        </div>
       </div>
-      <div class="sidebar-links-A">
-        <img class="sidebar-icon" src="imgs/Icons/sidebar/Playlist.svg">
-        <div class="sidebar-text">Playlists</div>
-      </div>
-      <div class="sidebar-links-A">
-        <img class="sidebar-icon" src="imgs/Icons/sidebar/Your-videos.svg">
-        <div class="sidebar-text">Your videos</div>
-      </div>
-      <div class="sidebar-links-A">
-        <img class="sidebar-icon" src="imgs/Icons/sidebar/Watch-later.svg">
-        <div class="sidebar-text">Watch later</div>
-      </div>
-      <div class="sidebar-links-A">
-        <img class="sidebar-icon" src="imgs/Icons/sidebar/Liked-videos.svg">
-        <div class="sidebar-text">Liked videos</div>
+
+        <hr />
+
+        <!-- subescriptions -->
+        <div class="section-section">
+          <h2 class="subscription-icon">Subscriptions</h2>
+          <ul class="subscription-list">
+            <li class="subscription-item">
+              <img src="imgs/profiles/car_profile.jpg" alt="Channel Icon">
+              <span>HitMakers</span><span class="live-icon-r">●</span>
+            </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/billie_profile.jpg" alt="Channel Icon">
+              <span>BillieEilish</span>
+            </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/channels3_profile.jpg" alt="Channel Icon">
+              <span>God Bless Bitcoin</span><span class="live-icon-b">●</span>
+            </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/channels4_profile.jpg" alt="Channel Icon">
+              <span>Rubik's</span>
+            </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/channels5_profile.jpg" alt="Channel Icon">
+              <span>Catur Newbie</span>
+            </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/channels6_profile.jpg" alt="Channel Icon">
+              <span>Essential Classics</span><span class="live-icon-b">●</span>
+            </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/channels9_profile.jpg" alt="Channel Icon">
+              <span>James Bartholomew</span><span class="live-icon-b">●</span>
+            </li>
+            <li class="subscription-item">
+              <img src="imgs/profiles/unnamed9.jpg" alt="Channel Icon">
+              <span>Top Gear</span>
+            </li>
+          </ul>
+          <div class="Show-more-icon"><img src="imgs/Icons/sidebar/Show-more.svg" alt=""> Show more</div>
+        </div>
+
+        <hr />
+
+        <!-- Explore -->
+        <div class="section-section">
+          <h2 class="Explore">Explore</h2>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Trending.svg">
+            <div class="Explore-text">Trending</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Musics.svg">
+            <div class="Explore-text">Music</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Movie.svg">
+            <div class="Explore-text">Movies & TY</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Movie.svg">
+            <div class="Explore-text">Live</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Gaming.svg">
+            <div class="Explore-text">Gaming</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/News.svg">
+            <div class="Explore-text">News</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Sports.svg" alt="">
+            <div class="Explore-text">Sports</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Learn.svg">
+            <div class="Explore-text">Learning</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Fashion.svg">
+            <div class="Explore-text">Fashion & Beauty</div>
+          </div>
+          <div class="Explore-links">
+            <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Podcats.svg">
+            <div class="Explore-text">Podcasts</div>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- More form youtube -->
+        <div class="section-section">
+          <h2 class="more-form">More form Youtube</h2>
+          <div class="more-form-link">
+            <img src="imgs/Icons/sidebar/more-form/youtube-premium.svg" />
+            <div>YouTbe Premium</div>
+          </div>
+          <div class="more-form-link">
+            <img src="imgs/Icons/sidebar/more-form/youtube-studio.svg" />
+            <div>YouTbe Studio</div>
+          </div>
+          <div class="more-form-link">
+            <img src="imgs/Icons/sidebar/more-form/youtube-music.svg" />
+            <div>YouTbe Music</div>
+          </div>
+          <div class="more-form-link">
+            <img src="imgs/Icons/sidebar/more-form/youtube-kids.svg" />
+            <div>YouTube Kids</div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="section-section">
+          <div class="more-form-link">
+            <img class="More-icons" src="imgs/Icons/sidebar/Explore/Setting.svg">
+            <div>Settings</div>
+          </div>
+          <div class="more-form-link">
+            <img class="More-icons" src="imgs/Icons/sidebar/Explore/Report.svg">
+            <div>Report history</div>
+          </div>
+          <div class="more-form-link">
+            <img class="More-icons" src="imgs/Icons/sidebar/Explore/Help.svg">
+            <div>Help</div>
+          </div>
+          <div class="more-form-link">
+            <img class="More-icons" src="imgs/Icons/sidebar/Explore/Feedback.svg">
+            <div>Send feedback</div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="about">
+          <div>About Press Copyrigh tContact us Creators Advertise Developers</div>
+          <div>Terms Privacy Policy & Safety How YouTube worksTest new features</div>
+          <div>© 2025 Google LLC</div>
+        </div>
       </div>
     </div>
-
-    <hr />
-
-    <!-- subescriptions -->
-    <div class="section-section">
-      <h2 class="subscription-icon">Subscriptions</h2>
-      <ul class="subscription-list">
-        <li class="subscription-item">
-          <img src="imgs/profiles/car_profile.jpg" alt="Channel Icon">
-          <span>HitMakers</span><span class="live-icon-r">●</span>
-        </li>
-        <li class="subscription-item">
-          <img src="imgs/profiles/billie_profile.jpg" alt="Channel Icon">
-          <span>BillieEilish</span>
-        </li>
-        <li class="subscription-item">
-          <img src="imgs/profiles/channels3_profile.jpg" alt="Channel Icon">
-          <span>God Bless Bitcoin</span><span class="live-icon-b">●</span>
-        </li>
-        <li class="subscription-item">
-          <img src="imgs/profiles/channels4_profile.jpg" alt="Channel Icon">
-          <span>Rubik's</span>
-        </li>
-        <li class="subscription-item">
-          <img src="imgs/profiles/channels5_profile.jpg" alt="Channel Icon">
-          <span>Catur Newbie</span>
-        </li>
-        <li class="subscription-item">
-          <img src="imgs/profiles/channels6_profile.jpg" alt="Channel Icon">
-          <span>Essential Classics</span><span class="live-icon-b">●</span>
-        </li>
-        <li class="subscription-item">
-          <img src="imgs/profiles/channels9_profile.jpg" alt="Channel Icon">
-          <span>James Bartholomew</span><span class="live-icon-b">●</span>
-        </li>
-        <li class="subscription-item">
-          <img src="imgs/profiles/unnamed9.jpg" alt="Channel Icon">
-          <span>Top Gear</span>
-        </li>
-      </ul>
-      <div class="Show-more-icon"><img src="imgs/Icons/sidebar/Show-more.svg" alt=""> Show more</div>
-    </div>
-
-    <hr />
-
-    <!-- Explore -->
-    <div class="section-section">
-      <h2 class="Explore">Explore</h2>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Trending.svg">
-        <div class="Explore-text">Trending</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Musics.svg">
-        <div class="Explore-text">Music</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Movie.svg">
-        <div class="Explore-text">Movies & TY</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Movie.svg">
-        <div class="Explore-text">Live</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Gaming.svg">
-        <div class="Explore-text">Gaming</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/News.svg">
-        <div class="Explore-text">News</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Sports.svg" alt="">
-        <div class="Explore-text">Sports</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Learn.svg">
-        <div class="Explore-text">Learning</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Fashion.svg">
-        <div class="Explore-text">Fashion & Beauty</div>
-      </div>
-      <div class="Explore-links">
-        <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Podcats.svg">
-        <div class="Explore-text">Podcasts</div>
-      </div>
-    </div>
-
-    <hr />
-
-    <!-- More form youtube -->
-    <div class="section-section">
-      <h2 class="more-form">More form Youtube</h2>
-      <div class="more-form-link">
-        <img src="imgs/Icons/sidebar/more-form/youtube-premium.svg" />
-        <div>YouTbe Premium</div>
-      </div>
-      <div class="more-form-link">
-        <img src="imgs/Icons/sidebar/more-form/youtube-studio.svg" />
-        <div>YouTbe Studio</div>
-      </div>
-      <div class="more-form-link">
-        <img src="imgs/Icons/sidebar/more-form/youtube-music.svg" />
-        <div>YouTbe Music</div>
-      </div>
-      <div class="more-form-link">
-        <img src="imgs/Icons/sidebar/more-form/youtube-kids.svg" />
-        <div>YouTube Kids</div>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="section-section">
-      <div class="more-form-link">
-        <img class="More-icons" src="imgs/Icons/sidebar/Explore/Setting.svg">
-        <div>Settings</div>
-      </div>
-      <div class="more-form-link">
-        <img class="More-icons" src="imgs/Icons/sidebar/Explore/Report.svg">
-        <div>Report history</div>
-      </div>
-      <div class="more-form-link">
-        <img class="More-icons" src="imgs/Icons/sidebar/Explore/Help.svg">
-        <div>Help</div>
-      </div>
-      <div class="more-form-link">
-        <img class="More-icons" src="imgs/Icons/sidebar/Explore/Feedback.svg">
-        <div>Send feedback</div>
-      </div>
-    </div>
-
-    <hr />
-
-    <div class="about">
-      <div>About Press Copyrigh tContact us Creators Advertise Developers</div>
-      <div>Terms Privacy Policy & Safety How YouTube worksTest new features</div>
-      <div>© 2025 Google LLC</div>
-    </div>
-  </div>
-  </div>
   </div>
 
   <!-- Main Content -->
@@ -407,63 +409,50 @@
 
           <button class="action dislike">
             <span class="icon dislike"><img class="action-icons" src="imgs/Icons/playback page/Dislike-icon.svg"></span>
-            <span class="icon disliked"><img class="action-icons"
-                src="imgs/Icons/playback page/Disliked-icon.svg"></span>
+            <span class="icon disliked"><img class="action-icons" src="imgs/Icons/playback page/Disliked-icon.svg"></span>
           </button>
 
           <div class="action-buttons">
             <!-- Share -->
-            <div class="share-container">
-              <button class="action share">
-                <span class="icon"><img class="action-icons" src="imgs/Icons/playback page/share-icon.svg"></span>
-                <span class="text">Share</span>
-              </button>
-
-              <!-- box -->
-              <div class="box-share">
-                <div class="index-container">
-                  <div>
-                    <div class="title-share">
-                      <p>Share</p>
-                    </div>
-                  </div>
-                  <div class="options-share">
-                    <div class="option">
-                      <div></div>
-                      <p>...</p>
-                    </div>
-                    <div class="option">
-                      <div></div>
-                      <p>...</p>
-                    </div>
-                    <div class="option">
-                      <div></div>
-                      <p>...</p>
-                    </div>
-                    <div class="option">
-                      <div></div>
-                      <p>...</p>
-                    </div>
-                    <div class="option">
-                      <div></div>
-                      <p>...</p>
-                    </div>
-                    <div class="option">
-                      <div></div>
-                      <p>...</p>
-                    </div>
-                  </div>
-                  <div class="index-address">
-                    <div class="index-url">
-                      <p>https://</p>
-                      <button class="copy-button">Copy</button>
-                    </div>
-                  </div>
-                  <hr>
-
+           <div class="share-container">
+            <button class="action share">
+              <span class="icon"><img class="action-icons" src="imgs/Icons/playback page/share-icon.svg"></span>
+              <span class="text">Share</span>
+            </button>
+            
+             <!-- box -->
+            <div class="box-share">
+              <div class="index-container">
+                <button class="slider-rigth-icon"><img src="imgs/Icons/Header/Scroll-right.svg"></button>
+                <button class="closed-icon"><img src="imgs/Icons/playback page/closed.svg" alt=""></button>
+                <div class="">
+                  <div class="title-share"><label>Share</label></div>
                 </div>
+                <br>
+                <div class="options-share">
+                  <div class="option"><div><img src="imgs/Icons/playback page/share-profil/embed.svg" alt=""></div><p>Embed</p></div>
+                  <div class="option"><div><img src="imgs/Icons/playback page/share-profil/goo.svg" alt=""></div><p>goo</p></div>
+                  <div class="option"><div><img src="imgs/Icons/playback page/share-profil/whatsApp.svg" alt=""></div><p>WhatsApp</p></div>
+                  <div class="option"><div><img src="imgs/Icons/playback page/share-profil/facebook.svg" alt=""></div><p>Facebook</p></div>
+                  <div class="option"><div><img src="imgs/Icons/playback page/share-profil/x.svg" alt=""></div><p>X</p></div>
+                  <div class="option"><div><img src="imgs/Icons/playback page/share-profil/email.svg" alt=""></div><p>Email</p></div>
+                </div>
+                <br>
+                <div class="index-address">
+                  <div class="index-url">
+                    <p>https://</p>
+                    <button class="copy-button">Copy</button>
+                  </div>
+                </div>
+                <hr>
+                <br>
+                 <div class="box-time">
+                  <input type="checkbox" class="checkbox">
+                  <span>Start at  19:00</span>
+                 </div>
               </div>
             </div>
+           </div>
             <!-- Download -->
             <button class="action download">
               <span class="icon"><img class="action-icons" src="imgs/Icons/playback page/Download-icon.svg"></span>
@@ -527,20 +516,23 @@
             596,999 views Nov 30, 2022</p>
 
           <section class="description">
-            <p>copyright The Pro Video</p>
-            <p>IF YOU WANT TO USE THE PRO VIDEO CONTENT:</p>
-            <ol>
-              <li>Add my links at the top of the description, use all links below.</li>
-              <li>Try your best to not cut my logos out of the video.</li>
-              <li>Please insert the source video you used of mine at the end of your video (End card).</li>
-            </ol>
-            <p>
-              If you do not meet these requirements, your video will be subject to removal with a copyright strike left
-              against your channel.
-              The fee to remove an existing strike is <strong>$500 USD.</strong>
-            </p>
+           <p>copyright The Pro Video</p>
+           <p>IF YOU WANT TO USE THE PRO VIDEO CONTENT:</p>
+            <div class="for-show-one">
+              <ol>
+                <li>Add my links at the top of the description, use all links below.</li>
+                <li>Try your best to not cut my logos out of the video.</li>
+                <li>Please insert the source video you used of mine at the end of your video (End card).</li>
+              </ol>
+              <p>
+                If you do not meet these requirements, your video will be subject to removal with a copyright strike left
+                against your channel.
+                The fee to remove an existing strike is <strong>$500 USD.</strong>
+              </p>
+            </div>
           </section>
 
+         <div class="for-show-two">
           <section class="links">
             <h4>Social Media:</h4>
             <ul>
@@ -555,6 +547,9 @@
             <p>Email: <a href="mailto:info@theprovideo.com">info@theprovideo.com</a></p>
             <p>Web: <a href="https://theprovideo.com">https://theprovideo.com</a></p>
           </section>
+         </div>  
+         <button class="show-btn more">...more</button>
+         <button class="show-btn less">Show less</button>
         </span>
         <!-- description -->
       </div>
@@ -708,29 +703,14 @@
 
       <!-- topic bar -->
       <div class="topic-bar-container">
-        <button class="scroll-button left"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-            width="24" focusable="false" aria-hidden="true" style="display: inherit; width: 24px; height: 24px;">
-            <path d="M14.96 18.96 8 12l6.96-6.96.71.71L9.41 12l6.25 6.25-.7.71z"></path>
-          </svg></button>
+        <button class="scroll-button left"><img src="imgs/Icons/Header/Scroll-left.svg"></button>
         <div class="topic-bar">
           <button class="topic" tabindex="0">All</button>
           <button class="topic" tabindex="0">Movies</button>
           <button class="topic" tabindex="0">News</button>
           <button class="topic" tabindex="0">Podcasts</button>
-          <button class="topic" tabindex="0">Education</button>
-          <button class="topic" tabindex="0">Comedy</button>
-          <button class="topic" tabindex="0">Live</button>
-          <button class="topic" tabindex="0">Travel</button>
-          <button class="topic" tabindex="0">Cars</button>
-          <button class="topic" tabindex="0">Music</button>
-          <button class="topic" tabindex="0">Gaming</button>
-          <button class="topic" tabindex="0">Movies</button>
-          <button class="topic" tabindex="0">News</button>
         </div>
-        <button class="scroll-button right"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24"
-            width="24" focusable="false" aria-hidden="true" style="display: inherit; width: 24px; height: 24px;">
-            <path d="m9.4 18.4-.7-.7 5.6-5.6-5.7-5.7.7-.7 6.4 6.4-6.3 6.3z"></path>
-          </svg></button>
+        <button class="scroll-button right"><img src="imgs/Icons/Header/Scroll-right.svg"></button>
       </div>
 
       <!-- <!-- Recommended video list -->
@@ -740,7 +720,6 @@
   </div>
 
   <!-- Scripts -->
-  <script type="module" src="js/main-page/Search.js"></script>
   <script src="js/playback-page/PB.actions.js"></script>
   <script type="module" src="js/playback-page/PB-recommended-video.js"></script>
   <script src="js/playback-page/PB.sidebar.js"></script>
@@ -748,6 +727,7 @@
   <script src="js/Header/profile-menu.js"></script>
   <script src="js/playback-page/PB-iframe.js"></script>
   <script src="js/playback-page/PB-share.js"></script>
+  <script src="js/playback-page/show-more.js"></script>
 </body>
 
 </html>
