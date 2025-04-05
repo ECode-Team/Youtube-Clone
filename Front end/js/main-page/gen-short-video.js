@@ -8,7 +8,7 @@ export async function loadShorts() {
   
   Shorts.forEach((short) => {
     const shortElement = document.createElement("a");
-    shortElement.href = `short.html?short=${encodeURIComponent(short.link)}`;
+    shortElement.href = `short.html?short=${encodeURIComponent(short.ID)}`;
     ShortSection.appendChild(shortElement);
 
     shortElement.innerHTML = `<div class="short-video-box">

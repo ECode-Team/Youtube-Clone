@@ -32,7 +32,7 @@ async function loadVideos(index) {
   const video = Videos[index];
 
   const videoElement = document.createElement("a");
-  videoElement.href = `video.html?video=${encodeURIComponent(video.link)}`;
+  videoElement.href = `video.html?video=${encodeURIComponent(JSON.stringify(video.ID))}`;
 
   videoElement.innerHTML = `
     <div class="video-preview">

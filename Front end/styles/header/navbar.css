@@ -90,7 +90,7 @@
   margin-left: 50px;
 }
 
-.search-bar input {
+.search-bar input { 
   background: transparent;
   flex: 1;
   border: 0;

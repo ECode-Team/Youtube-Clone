@@ -1,4 +1,4 @@
-import { suggestionsArray } from './../suggestion.js';
+import { suggestionsArray } from './suggestion.js';
 
 const [searchInput, suggestionContainer, searchButton] = [...document.querySelectorAll('.search-input, .suggestion-container, .serch-icon')];
 let suggestionItem;
