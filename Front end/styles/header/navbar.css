@@ -78,6 +78,10 @@
   margin-left: 50px;
 }
 
+.cointainer.search-container {
+  margin-top: 17px;
+}
+
 .search-bar {
   position: relative;
   flex: 1;

@@ -18,16 +18,20 @@ async function fetchDatas() {
         VideoCard.classList.add("searched-video");
 
         VideoCard.innerHTML = `
-        <img src="${video.Thumbnail}" alt="Thumbnail">
-            <div class="searched-video-info">
-                <h4>${video.Title}</h4>
-                <span>${video.Channel}</span>
-                <span>${video.Views}</span>
-            </div>
-            <div class="ellipsis"><img src="imgs/Icons/playback page/more-icon.png"></div>
+        <div class="searched-list-container">
+    <img class="searched-thumbnail" src="${video.Thumbnail}" alt="Thumbnail">
+    <div class="searched-video-info">
+        <h4>${video.Title}</h4>
+        <span>${video.Views}</span>
+    <div class="searched-channel">
+        <img class="searched-channel-picture" src="${video.channelPicture}">
+        <span>${video.Channel}</span>
+    </div>
+    </div>
+    <div class="ellipsis"><img src="imgs/Icons/playback page/more-icon.png"></div>
+</div>
         `;
         searchedList.appendChild(VideoCard);
-    })   
+    })
 }
-
 fetchDatas();
