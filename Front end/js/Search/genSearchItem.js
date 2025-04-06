@@ -14,15 +14,16 @@ async function fetchDatas() {
     })
 
     Result.forEach(video => {
-        const VideoCard = document.createElement("div");
+        const VideoCard = document.createElement("a");
         VideoCard.classList.add("searched-video");
+        VideoCard.href = `video.html?video=${encodeURIComponent(JSON.stringify(video.ID))}`
 
         VideoCard.innerHTML = `
         <div class="searched-list-container">
     <img class="searched-thumbnail" src="${video.Thumbnail}" alt="Thumbnail">
     <div class="searched-video-info">
         <h4>${video.Title}</h4>
-        <span>${video.Views}</span>
+        <span class="searched-views">${video.Views}</span>
     <div class="searched-channel">
         <img class="searched-channel-picture" src="${video.channelPicture}">
         <span>${video.Channel}</span>

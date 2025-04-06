@@ -21,6 +21,7 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    cursor: default;
 }
 
 .searched-thumbnail {
@@ -29,8 +30,13 @@
     max-width: 500px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 15px;
     cursor: pointer;
+    transition: border-radius 0.2s, scale 0.2s;
+}
+.searched-thumbnail:hover {
+    scale: 1.005;
+    border-radius: 2px;
 }
 
 /* Info section stretches beside thumbnail */
@@ -52,7 +58,7 @@
 }
 
 /* Channel and views */
-.searched-video-info span {
+.searched-views {
     font-size: 0.8rem;
     margin-bottom: 15px;
     cursor: pointer;
@@ -61,12 +67,16 @@
 .searched-channel {
     display: flex;
     align-items: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    cursor: pointer;
 }
 
 .searched-channel-picture {
     width: 25px;
     border-radius: 50%;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 /* Ellipsis menu */

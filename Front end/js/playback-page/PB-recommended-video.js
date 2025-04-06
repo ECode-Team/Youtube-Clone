@@ -10,8 +10,9 @@ async function loadVideos() {
         VideoList.forEach(VideoList => {
             // For each on of objects
             Videos.forEach(video => {
-                const VideoCard = document.createElement("div");
+                const VideoCard = document.createElement("a");
                 VideoCard.classList.add("video-card");
+                VideoCard.href = `video.html?video=${encodeURIComponent(JSON.stringify(video.ID))}`
 
                 VideoCard.innerHTML = `
         <img src="${video.Thumbnail}" alt="Thumbnail">
