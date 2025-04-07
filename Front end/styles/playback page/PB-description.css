@@ -48,3 +48,8 @@
   border: none;
   cursor: pointer;
 }
+
+.for-show-one, .for-show-two{
+  display: flex;
+  flex-direction: column;
+}
