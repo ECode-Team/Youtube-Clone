@@ -3,7 +3,8 @@
   --Smain-color: #ffffff;
   --Sbox-color: rgb(255, 255, 255);
   --Shover-color: rgb(202, 202, 202);
-  --Scopy-color: rgb(0, 81, 255);
+  --Scopy-color: rgb(0, 73, 230);
+  --Scopy-hover-color: rgb(0, 61, 192);
   --Stext-copy-color: rgb(255, 255, 255);
   --Sicon-color: 0;
 }
@@ -13,7 +14,8 @@
   --Smain-color: rgb(42, 42, 42);
   --Sbox-color: rgb(24, 24, 24);
   --Shover-color: rgb(95, 95, 95);
-  --Scopy-color: rgba(0, 204, 255, 0.856);
+  --Scopy-color: rgb(0, 174, 255);
+  --Scopy-hover-color: rgb(62, 193, 253);
   --Stext-copy-color: rgba(0, 0, 0, 0.856);
   --Sicon-color: 1;
 }
@@ -148,6 +150,10 @@
   border-radius: 50px;
   color: var(--Stext-copy-color);
   background-color: var(--Scopy-color);
+}
+
+.copy-button:hover {
+  background-color: var(--Scopy-hover-color);
 }
 
 .box-time {
