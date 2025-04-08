@@ -59,6 +59,10 @@
     color: var(--Crtptext-color);
 }
 
+.comment-input {
+    color: var(--Crtptext-color);
+}
+
 .comment-action {
     display: flex;
     align-items: center;
@@ -103,4 +107,8 @@
 {
     font-size: 0.8rem;
     color: var(--Crtptext-color);
+}
+
+.comment-list {
+    padding: 0;
 }
