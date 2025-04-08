@@ -10,8 +10,9 @@ async function loadVideos() {
         VideoList.forEach(VideoList => {
             // For each on of objects
             Videos.forEach(video => {
-                const VideoCard = document.createElement("div");
+                const VideoCard = document.createElement("a");
                 VideoCard.classList.add("video-card");
+                VideoCard.href = `video.html?video=${encodeURIComponent(JSON.stringify(video.ID))}`
 
                 VideoCard.innerHTML = `
         <img src="${video.Thumbnail}" alt="Thumbnail">
@@ -22,15 +23,12 @@ async function loadVideos() {
             </div>
             <div class="ellipsis"><img src="imgs/Icons/playback page/more-icon.png"></div>
         `;
-
                 // Make VideoCard child of VideoList
                 VideoList.appendChild(VideoCard);
-                console.log(VideoCard);
             });
         })
     }
 
     GenerateVideoCards();
 }
-
 loadVideos()

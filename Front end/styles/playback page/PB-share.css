@@ -1,3 +1,23 @@
+:root {
+  --Stext-color: #000000;
+  --Smain-color: #ffffff;
+  --Sbox-color: rgb(255, 255, 255);
+  --Shover-color: rgb(202, 202, 202);
+  --Scopy-color: rgb(0, 81, 255);
+  --Stext-copy-color: rgb(255, 255, 255);
+  --Sicon-color: 0;
+}
+
+.dark-mode {
+  --Stext-color: white;
+  --Smain-color: rgb(42, 42, 42);
+  --Sbox-color: rgb(24, 24, 24);
+  --Shover-color: rgb(95, 95, 95);
+  --Scopy-color: rgba(0, 204, 255, 0.856);
+  --Stext-copy-color: rgba(0, 0, 0, 0.856);
+  --Sicon-color: 1;
+}
+
 .box-share {
   display: none;
   position: fixed;
@@ -8,19 +28,11 @@
   height: 338px;
   padding: 0px 24px;
   margin: 24px 40px;
-  background: white;
+  color: var(--text-color);
+  background-color: var(--main-color);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   border-radius: 13px;
   z-index: 1001;
-}
-
-.shadow-share {
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.23);
 }
 
 .box-share.active,
@@ -36,6 +48,44 @@
   margin-top: 24px;
 }
 
+.closed-icon {
+  position: fixed;
+  top: 20px;
+  left: 475px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  filter: invert(var(--Sicon-color));
+  cursor: pointer;
+}
+
+.slider-rigth-icon {
+  position: fixed;
+  top: 72px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.507);
+}
+
+.slider-rigth-icon img {
+  filter: invert(var(--Sicon-color));
+  width: 25px;
+  height: 25px;
+}
+.navbar-up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .options-share {
   display: flex;
   width: 460px;
@@ -43,37 +93,40 @@
 }
 
 .option {
-  width: 80px;
+  width: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .option div {
-  width: 65px;
-  height: 65px;
-  /* margin: 5px; */
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: rgb(218, 218, 218);
   justify-content: center;
 }
 
 .option p {
   display: flex;
+  align-items: center;
+  font-size: 13px;
+  height: 30px;
+  margin: 0;
 }
 
 .index-address {
   display: flex;
   align-items: end;
   width: 468px;
-  height: 70px;
+  height: 60px;
 }
 
 .index-url {
   display: flex;
   width: 100%;
   height: 55px;
-  border: 1px solid rgb(218, 218, 218);
+  background-color: var(--Sbox-color);
+  border: 1px solid var(--Shover-color);
   border-radius: 13px;
   padding: 8px 0px;
 }
@@ -88,12 +141,26 @@
 }
 
 .copy-button {
-  width: 67px;
-  height: 36px;
+  width: 69px;
+  height: 37px;
   border: none;
-  font-weight: 600;
   margin: 0px 8px;
   border-radius: 50px;
-  color: white;
-  background-color: rgba(0, 68, 255, 0.911);
+  color: var(--Stext-copy-color);
+  background-color: var(--Scopy-color);
+}
+
+.box-time {
+  display: flex;
+  align-items: center;
+}
+
+.box-time span {
+  font-size: 14px;
+  padding-left: 16px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 2px 0px 0px;
 }

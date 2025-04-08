@@ -2,7 +2,7 @@
     --Mtext-color: #000000;
     --Mmain-color: #ffffff;
     --Mbutton-color: rgb(244, 244, 244);
-    --Mhover-color: rgb(228, 228, 228);
+    --Mhover-color: rgb(240, 240, 240);
     --Micon-color: 0;
   }
   
@@ -10,7 +10,7 @@
     --Mtext-color: whitM;
     --Mmain-color: #0f0f0f;
     --Mbutton-color: rgb(42, 42, 42);
-    --Mhover-color: rgb(60, 60, 60);
+    --Mhover-color: rgba(49, 49, 49, 0.705);
     --Micon-color: 1;
   }
 
@@ -48,7 +48,7 @@
 }
 
 .about div{
-color: rgb(74, 74, 74);
+color: rgb(141, 141, 141);
 padding: 10px;
 font-family: "Roboto", "Arial", sans-serif;
 font-size: 13px;

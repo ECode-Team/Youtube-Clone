@@ -2,7 +2,7 @@
   --SBtext-color: #000000;
   --SBmain-color: #ffffff;
   --SBbutton-color: rgb(244, 244, 244);
-  --SBhover-color: rgb(228, 228, 228);
+  --SBhover-color: rgb(240, 240, 240);
   --SBicon-color: 0;
 }
 
@@ -10,7 +10,7 @@
   --SBtext-color: white;
   --SBmain-color: #0f0f0f;
   --SBbutton-color: rgb(42, 42, 42);
-  --SBhover-color: rgb(60, 60, 60);
+  --SBhover-color: rgba(49, 49, 49, 0.705);
   --SBicon-color: 1;
 }
 
@@ -72,7 +72,7 @@
   font-size: 12px;
 }
 
-.Show-more-icon {
+.Show-icon {
   height: 40px;
   width: 183px;
   padding: 0px 10px;
@@ -83,10 +83,24 @@
   cursor: pointer;
   border-radius: 10px;
 }
-.Show-more-icon img {
+
+.Show-btn {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--SBtext-color);
+}
+
+.Show-icon img {
   filter: invert(var(--SBicon-color));
   margin-right: 25px;
 }
-.Show-more-icon:hover {
+
+.Show-icon:hover {
   background-color: var(--SBhover-color);
 }

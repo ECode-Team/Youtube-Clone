@@ -1,14 +1,26 @@
+:root {
+  --SAtext-color: #000000;
+  --SAhover-color: rgb(228, 228, 228);
+  --SAicon-color: 0;
+}
+
+.dark-mode {
+  --SAtext-color: white;
+  --SAhover-color: rgb(207, 207, 207);
+  --SAicon-color: 1;
+}
+
 .Short-video-container {
   display: block;
-  height: 545px;
-  margin: 25px 0px 75px 0px;
+  min-height: 600px;
+  margin: 0px 0px 35px 0px;
 }
 
 .navbar-short-video {
   height: 40px;
   display: flex;
   justify-content: space-between;
-  margin: 0px 0px 16px 8px;
+  margin: 0px 0px 20px 8px;
   align-items: center;
 }
 
@@ -36,6 +48,7 @@
 .button-mnue button {
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  height: 35px;
   width: 40px;
   display: flex;
   justify-content: space-between;
@@ -54,16 +67,18 @@
 .short-video-title {
   display: flex;
   align-items: start;
+  justify-content: space-between;
 }
 .short-video-title img {
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
   padding: 5px;
   border-radius: 50%;
   margin: 2px 0px 0px 0px;
+  filter: invert(var(--SAicon-color));
 }
 .short-video-title img:hover {
-  background: rgb(221, 221, 221);
+  background: var(--SAhover-color);
 }
 .short-video-title span {
   margin-bottom: 4px;
@@ -72,6 +87,7 @@
   font-weight: 500;
   line-height: 23px;
 }
+
 .short-video-stats {
   font-size: 14px;
   margin: 0;

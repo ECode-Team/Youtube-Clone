@@ -32,7 +32,7 @@ async function loadVideos(index) {
   const video = Videos[index];
 
   const videoElement = document.createElement("a");
-  videoElement.href = `video.html?video=${encodeURIComponent(video.link)}`;
+  videoElement.href = `video.html?video=${encodeURIComponent(JSON.stringify(video.ID))}`;
 
   videoElement.innerHTML = `
     <div class="video-preview">
@@ -42,7 +42,7 @@ async function loadVideos(index) {
       </div>
       <div class="video-info-grid">
         <div class="channel-picture">
-          <img class="profile-picture" src="imgs/profiles/unnamed.jpg" />
+          <img class="profile-picture" src="${video.channelPicture}" />
         </div>
         <div class="video-info">
           <div class="video-title">

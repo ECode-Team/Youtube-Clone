@@ -7,7 +7,7 @@ export async function adjustLayout() {
     const [container, shortContainer] = [...document.querySelectorAll('.content-container, .Short-video-container')];
     const screenWith = document.querySelector('.content-container').getBoundingClientRect().width;
 
-    // Calculate max short per row
+    // Calculate max video/short per row
     const maxShortPerRow = Math.round(screenWith / 260);
     const maxLongPerRow = Math.round(screenWith / 370);
 

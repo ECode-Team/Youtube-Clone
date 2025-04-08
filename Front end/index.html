@@ -39,7 +39,8 @@
       </button>
       <a href="index.html">
         <div class="youtube-logo">
-          <img class="nav-icon" src="imgs/Icons/Header/Youtube.svg" alt="">
+          <img src="imgs/Icons/Header/Youtube-logo.svg" alt="">
+          <img class="nav-icon" src="imgs/Icons/Header/Youtube-text.svg" alt="">
         </div>
       </a>
     </div>
@@ -47,120 +48,121 @@
     <div class="middle-section">
       <form class="cointainer">
         <div class="search-bar">
-          <input type="text" placeholder="Search" name="q" />
-          <button type="submit" class="serch-icon">
+          <input type="text" placeholder="Search" name="q" class="search-input" />
+          <div class="suggestion-container"></div>
+          <button class="serch-icon">
             <img class="nav-icon" src="imgs/Icons/Header/Search.svg" alt="">
             <div class="tooltips">Search</div>
           </button>
+        </div>
       </form>
+      <div class="mic-icon">
+        <button>
+          <i class="fa-solid fa-microphone"></i>
+          <div class="tooltips">Search with your vioce</div>
+        </button>
+      </div>
     </div>
-    <div class="mic-icon">
-      <button>
-        <i class="fa-solid fa-microphone"></i>
-        <div class="tooltips">Search with your vioce</div>
+
+    <!-- rigth -->
+    <div class="rigth-section">
+      <div class="plus-btn">
+        <img class="nav-icon" src="imgs/Icons/Header/Create.svg" alt="">
+        <p class="create">Create</p>
+      </div>
+      <button class="bell-btn">
+        <div class="notification-container">
+          <img class="bell" src="imgs/Icons/Header/Notification.svg" alt="">
+          <div class="notification-icon">3</div>
+          <div class="tooltips">Notifications</div>
+        </div>
       </button>
-    </div>
-  </div>
-
-  <!-- rigth -->
-  <div class="rigth-section">
-    <div class="plus-btn">
-      <img class="nav-icon" src="imgs/Icons/Header/Create.svg" alt="">
-      <p class="create">Create</p>
-    </div>
-    <button class="bell-btn">
-      <div class="notification-container">
-        <img class="bell" src="imgs/Icons/Header/Notification.svg" alt="">
-        <div class="notification-icon">3</div>
-        <div class="tooltips">Notifications</div>
-      </div>
-    </button>
-    <!-- user-profile -->
-    <div class="profile-container">
-      <!-- Profile Icon -->
-      <div class="profile-icon">
-        <img src="imgs/profiles/Untitled-1.psd6.png" class="profile-pic" />
-      </div>
-
-      <div class="theme-toggle">
-        <div class="title">
-          <img class="theme-back-flash" src="imgs/Icons/Header/Profile-menu/back-flash.svg" alt="">
-          <span class="theme-toggle-title">Appearance</span>
+      <!-- user-profile -->
+      <div class="profile-container">
+        <!-- Profile Icon -->
+        <div class="profile-icon">
+          <img src="imgs/profiles/Untitled-1.psd6.png" class="profile-pic" />
         </div>
-        <hr class="menu-hr" />
-        <div class="Appearance-list">
-          <div class="theme-Mode device">
-            <img class="theme-tick device" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
-            <span>Use device theme</span>
+
+        <div class="theme-toggle">
+          <div class="title">
+            <img class="theme-back-flash" src="imgs/Icons/Header/Profile-menu/back-flash.svg" alt="">
+            <span class="theme-toggle-title">Appearance</span>
           </div>
-          <div class="theme-Mode dark">
-            <img class="theme-tick dark" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
-            <span>Dark theme</span>
-          </div>
-          <div class="theme-Mode light">
-            <img class="theme-tick light" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
-            <span>Light theme</span>
+          <hr class="menu-hr" />
+          <div class="Appearance-list">
+            <div class="theme-Mode device">
+              <img class="theme-tick device" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+              <span>Use device theme</span>
+            </div>
+            <div class="theme-Mode dark">
+              <img class="theme-tick dark" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+              <span>Dark theme</span>
+            </div>
+            <div class="theme-Mode light">
+              <img class="theme-tick light" src="imgs/Icons/Header/Profile-menu/theme-tick.svg" alt="">
+              <span>Light theme</span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Dropdown Menu -->
-      <div class="profile-menu">
-        <div class="user-info">
-          <img src="imgs/profiles/Untitled-1.psd6.png" class="dropdown-pic" />
-          <div>
-            <h3 class="user-name">Pico</h3>
-            <p class="user-id">@picobax369</p>
-            <a href="#" class="view-channel-link">View your channel</a>
+        <!-- Dropdown Menu -->
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="imgs/profiles/Untitled-1.psd6.png" class="dropdown-pic" />
+            <div>
+              <h3 class="user-name">Pico</h3>
+              <p class="user-id">@picobax369</p>
+              <a href="#" class="view-channel-link">View your channel</a>
+            </div>
           </div>
+          <hr class="menu-hr" />
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img src="imgs/Icons/Header/Profile-menu/Google-Acount.svg">Google Account
+            </li>
+            <li class="menu-item-2">
+              <img src="imgs/Icons/Header/Profile-menu/Switch-Account.svg">
+              Switch account
+              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+            </li>
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Sign-out.svg">Sign out</li>
+            <hr class="menu-hr" />
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/studio.svg" alt="">YouTube Studio</li>
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/membership.svg" alt="">Purchases and
+              memberships</li>
+            <hr class="menu-hr" />
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Data.svg" alt="">Your data in YouTube</li>
+            <li class="menu-item-2 Appearance">
+              <img class="icon-svg" src="imgs/Icons/Header/Profile-menu/Appearance.svg">
+              Appearance: Device theme
+              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+            </li>
+            <li class="menu-item-2">
+              <img src="imgs/Icons/Header/Profile-menu/Language.svg">
+              Language: English
+              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+            </li>
+            <li class="menu-item-2">
+              <img src="imgs/Icons/Header/Profile-menu/Restricted.svg" alt="">
+              Restricted Mode: Off
+              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+            </li>
+            <li class="menu-item-2">
+              <img src="imgs/Icons/Header/Profile-menu/Location.svg">
+              Location: United States
+              <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
+            </li>
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Keyboard.svg">Keyboard shortcuts</li>
+            <hr class="menu-hr" />
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Setting.svg" alt="">Settings</li>
+            <hr class="menu-hr" />
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Help.svg">Help</li>
+            <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Feedback.svg" alt="">Send feedback</li>
+          </ul>
         </div>
-        <hr class="menu-hr" />
-        <ul class="menu-list">
-          <li class="menu-item">
-            <img src="imgs/Icons/Header/Profile-menu/Google-Acount.svg">Google Account
-          </li>
-          <li class="menu-item-2">
-            <img src="imgs/Icons/Header/Profile-menu/Switch-Account.svg">
-            Switch account
-            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-          </li>
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Sign-out.svg">Sign out</li>
-          <hr class="menu-hr" />
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/studio.svg" alt="">YouTube Studio</li>
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/membership.svg" alt="">Purchases and
-            memberships</li>
-          <hr class="menu-hr" />
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Data.svg" alt="">Your data in YouTube</li>
-          <li class="menu-item-2 Appearance">
-            <img class="icon-svg" src="imgs/Icons/Header/Profile-menu/Appearance.svg">
-            Appearance: Device theme
-            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-          </li>
-          <li class="menu-item-2">
-            <img src="imgs/Icons/Header/Profile-menu/Language.svg">
-            Language: English
-            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-          </li>
-          <li class="menu-item-2">
-            <img src="imgs/Icons/Header/Profile-menu/Restricted.svg" alt="">
-            Restricted Mode: Off
-            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-          </li>
-          <li class="menu-item-2">
-            <img src="imgs/Icons/Header/Profile-menu/Location.svg">
-            Location: United States
-            <img class="right-button" src="imgs/Icons/Header/Profile-menu/Right-button.svg">
-          </li>
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Keyboard.svg">Keyboard shortcuts</li>
-          <hr class="menu-hr" />
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Setting.svg" alt="">Settings</li>
-          <hr class="menu-hr" />
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Help.svg">Help</li>
-          <li class="menu-item"><img src="imgs/Icons/Header/Profile-menu/Feedback.svg" alt="">Send feedback</li>
-        </ul>
       </div>
     </div>
-  </div>
   </div>
 
   <!-- topic-bar -->
@@ -169,7 +171,6 @@
     <div class="topic-bar">
       <button class="topic" tabindex="0">All</button>
       <button class="topic" tabindex="0">Music</button>
-      <button class="topic" tabindex="0">Gaming</button>
       <button class="topic" tabindex="0">Movies</button>
       <button class="topic" tabindex="0">News</button>
       <button class="topic" tabindex="0">Podcasts</button>
@@ -179,25 +180,14 @@
       <button class="topic" tabindex="0">Travel</button>
       <button class="topic" tabindex="0">Cars</button>
       <button class="topic" tabindex="0">Music</button>
-      <button class="topic" tabindex="0">Gaming</button>
+      <button class="topic" tabindex="0">Bodybuilding</button>
       <button class="topic" tabindex="0">Movies</button>
-      <button class="topic" tabindex="0">News</button>
-      <button class="topic" tabindex="0">Music</button>
-      <button class="topic" tabindex="0">Gaming</button>
-      <button class="topic" tabindex="0">Movies</button>
-      <button class="topic" tabindex="0">News</button>
-      <button class="topic" tabindex="0">Podcasts</button>
-      <button class="topic" tabindex="0">Education</button>
-      <button class="topic" tabindex="0">Comedy</button>
-      <button class="topic" tabindex="0">Live</button>
-      <button class="topic" tabindex="0">Travel</button>
-      <button class="topic" tabindex="0">Cars</button>
-      <button class="topic" tabindex="0">Music</button>
-      <button class="topic" tabindex="0">Gaming</button>
-      <button class="topic" tabindex="0">Movies</button>
-      <button class="topic" tabindex="0">News</button>
+      <button class="topic" tabindex="0">Trade</button>
+      <button class="topic" tabindex="0">Chess</button>
+      <button class="topic" tabindex="0">Rubiks</button>
+      <button class="topic" tabindex="0">Crypto</button>
     </div>
-    <button class="scroll-button right"><img src="imgs/Icons/Header/Scroll-right.svg"></button>
+    <div class="right-section-p"><button class="scroll-button right"><img src="imgs/Icons/Header/Scroll-right.svg"></button></div>
   </div>
 
   <!-- sidebar -->
@@ -252,9 +242,7 @@
 
     <!-- for rispansive -->
     <div class="for-delete">
-
       <hr />
-
       <!-- subescriptions -->
       <div class="section-section">
         <h2 class="subscription-icon">Subscriptions</h2>
@@ -291,8 +279,21 @@
             <img src="imgs/profiles/unnamed9.jpg" alt="Channel Icon">
             <span>Top Gear</span>
           </li>
+          <li class="subscription-item hidden">
+            <img src="imgs/profiles/unnamed.jpg" alt="Channel Icon">
+            <span>CUBASTIC</span>
+          </li>
+          <li class="subscription-item hidden">
+            <img src="imgs/profiles/unnamed2.jpg" alt="Channel Icon">
+            <span>Chess Co</span>
+          </li>
+          <li class="subscription-item hidden">
+            <img src="imgs/profiles/Untitled-1.psd6.png" alt="Channel Icon">
+            <span>Pico</span>
+          </li>
         </ul>
-        <div class="Show-more-icon"><img src="imgs/Icons/sidebar/Show-more.svg" alt=""> Show more</div>
+        <div class="Show-icon more"><button class="Show-btn"><img src="imgs/Icons/sidebar/Show-more.svg" alt=""> Show more</button></div>
+        <div class="Show-icon less"><button class="Show-btn"><img src="imgs/Icons/sidebar/show-less.svg" alt=""> Show less</button></div>
       </div>
 
       <hr />
@@ -416,12 +417,14 @@
       <div class="Short-video-section">
       </div>
     </div>
-
   </div>
 
   <script type="module" src="js/main-page/video-grid.js"></script>
   <script type="module" src="js/main-page/sidebar.js"></script>
+  <script type="module" src="js/Search/Search.js"></script>
   <script src="js/Header/profile-menu.js"></script>
+  <script src="js/main-page/show-more.js"></script>
   
 </body>
+
 </html>

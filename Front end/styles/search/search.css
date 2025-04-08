@@ -1,0 +1,98 @@
+:root {
+    --SSicon-color: 0;
+}
+.dark-mode {
+    --SSicon-color: 1;
+}
+
+.searched-list {
+    margin-top: -70;
+}
+
+.searched-list-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 8 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.searched-video {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    cursor: default;
+}
+
+.searched-thumbnail {
+    flex-shrink: 0;
+    width: 30vw;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: border-radius 0.2s, scale 0.2s;
+}
+.searched-thumbnail:hover {
+    scale: 1.005;
+    border-radius: 2px;
+}
+
+/* Info section stretches beside thumbnail */
+.searched-video-info {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+/* Title */
+.searched-video-info h4 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    font-weight: 400;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+/* Channel and views */
+.searched-views {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.searched-channel {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.searched-channel-picture {
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+/* Ellipsis menu */
+.ellipsis {
+    margin-left: auto;
+    align-self: flex-start;
+    cursor: pointer;
+    filter: invert(var(--SSicon-color));
+}
+
+.ellipsis img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+}
+
+.ellipsis img:hover {
+    opacity: 1;
+}
