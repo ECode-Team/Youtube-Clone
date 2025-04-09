@@ -40,7 +40,7 @@ You can access the deployed version of this project:
 ## Collaborators
 This project was created by:
 - **[Yassin teymoori](https://github.com/yasin0121)** -  Frontend Developer & Team Leader
-- **[Parham solhmirzai](https://github.com/parham0121)** -  Frontend Developer
+- **[Parham solhmirzaei](https://github.com/parham0121)** -  Frontend Developer
 - **[Salar pourrezaieyan](https://github.com/Salar-pr)** -  Backend Developer
 
 ## Installation
