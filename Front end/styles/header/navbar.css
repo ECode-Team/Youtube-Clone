@@ -163,7 +163,7 @@
   background-color: var(--Nhover-color);
 }
 
-.mic-icon {
+.mic-icon  {
   width: 70px;
 }
 
@@ -177,6 +177,11 @@
   background-color: var(--Nbutton-color);
   color: var(--Ntext-color);
 }
+
+.mic-icon img {
+  width: 25px;
+  filter: invert(var(--Nicon-color));
+} 
 
 .mic-icon button:hover {
   background-color: var(--Nhover-color);

@@ -109,7 +109,7 @@
     display: none;
   }
 
-  .hr-between.closed {
+  .hr-between {
     display: none !important;
   }
 }
