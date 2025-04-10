@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Short videos</title>
+
+    <!--Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Noto+Nastaliq+Urdu:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="styles/sidebar/sidebar.css"/>
     <link rel="stylesheet" href="styles/sidebar/subescriptions.css">
     <link rel="stylesheet" href="styles/sidebar/Explore.css">
     <link rel="stylesheet" href="styles/sidebar/more-form.css">
@@ -11,12 +21,12 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header/profile-menu.css" />
     <link rel="stylesheet" href="styles/header/navbar.css" />
-    <link rel="stylesheet" href="styles/sidebar/sidebar.css" />
     <link rel="stylesheet" href="styles/Shorts video/SH-container.css" />
     <link rel="stylesheet" href="styles/Shorts video/SH-top.css" />
     <link rel="stylesheet" href="styles/Shorts video/SH-dwon.css" />
     <link rel="stylesheet" href="styles/Shorts video/SH-action.css" />
     <link rel="stylesheet" href="styles/Shorts video/SH-video.css" />
+
   </head>
 <body>
 
@@ -38,7 +48,8 @@
     <div class="middle-section">
       <form class="cointainer">
         <div class="search-bar">
-          <input type="text" placeholder="Search" name="q" />
+          <input class="search-input" type="text" placeholder="Search" name="q" />
+          <div class="suggestion-container"></div>
           <button type="submit" class="serch-icon">
             <img class="nav-icon" src="imgs/Icons/Header/Search.svg" alt="">
             <div class="tooltips">Search</div>
@@ -47,7 +58,7 @@
     </div>
     <div class="mic-icon">
       <button>
-        <i class="fa-solid fa-microphone"></i>
+        <img src="imgs/Icons/Header/mic.svg" alt="">
         <div class="tooltips">Search with your vioce</div>
       </button>
     </div>
@@ -245,8 +256,21 @@
                 <img src="imgs/profiles/unnamed9.jpg" alt="Channel Icon">
                 <span>Top Gear</span>
               </li>
-            </ul>
-            <div class="Show-more-icon"><img src="imgs/Icons/sidebar/Show-more.svg" alt=""> Show more</div>
+              <li class="subscription-item hidden">
+                <img src="imgs/profiles/unnamed.jpg" alt="Channel Icon">
+                <span>CUBASTIC</span>
+            </li>
+            <li class="subscription-item hidden">
+                <img src="imgs/profiles/unnamed2.jpg" alt="Channel Icon">
+                <span>Chess Co</span>
+            </li>
+            <li class="subscription-item hidden">
+                <img src="imgs/profiles/Untitled-1.psd6.png" alt="Channel Icon">
+                <span>Pico</span>
+            </li>
+        </ul>
+        <div class="Show-icon more"><button class="Show-btn"><img src="imgs/Icons/sidebar/Show-more.svg" alt=""> Show more</button></div>
+        <div class="Show-icon less"><button class="Show-btn"><img src="imgs/Icons/sidebar/show-less.svg" alt=""> Show less</button></div>
           </div>
   
           <hr />
@@ -267,7 +291,7 @@
               <div class="Explore-text">Movies & TY</div>
             </div>
             <div class="Explore-links">
-              <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Movie.svg">
+              <img class="Explore-icon" src="imgs/Icons/sidebar/Explore/Live.svg">
               <div class="Explore-text">Live</div>
             </div>
             <div class="Explore-links">
@@ -343,9 +367,9 @@
           <hr />
   
           <div class="about">
-            <div>About Press Copyrigh tContact us Creators Advertise Developers</div>
-            <div>Terms Privacy Policy & Safety How YouTube worksTest new features</div>
-            <div>© 2025 Google LLC</div>
+            <div class="for-ECode-TM">ECode TM</div>
+            <div class="skill">This project is a YouTube Clone built with Html Css and Javascript for front end and Django for backend</div>
+            <div class="copy-right">© 2025 ECode Team. All rights reserved.</div>
           </div>
   
         </div>
@@ -422,6 +446,8 @@
   <script src="js/short/SH-like.js"></script>
   <script src="js/short/SH-subscribe.js"></script>
   <script type="module" src="js/short/decodeURIShort.js"></script>
-
+  <script src="js/main-page/show-more.js"></script>
+  <script type="module" src="js/Search/Search.js"></script>
+  
 </body>
 </html>

@@ -89,9 +89,15 @@
   border: solid 1px var(--Nhover-color);
   align-items: center;
   border-radius: 60px;
+  outline: none;
   padding-left: 15px;
   box-shadow: inset 0px 0px 1px var(--Nhover-color);
   margin-left: 50px;
+  transition: border 1.3s;
+}
+
+.search-bar:hover {
+  border: 1px solid blue ;
 }
 
 .search-bar input { 
@@ -112,10 +118,9 @@
   top: 100%;
   left: 0;
   width: 100%;
-  min-width: 200px;
   max-height: 560px;
   margin-top: 5px;
-  padding: 12px 0 12px 0;
+  padding: 0;
   background-color: var(--Nsearch-color);
   border-radius: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -163,7 +168,7 @@
   background-color: var(--Nhover-color);
 }
 
-.mic-icon {
+.mic-icon  {
   width: 70px;
 }
 
@@ -177,6 +182,11 @@
   background-color: var(--Nbutton-color);
   color: var(--Ntext-color);
 }
+
+.mic-icon img {
+  width: 25px;
+  filter: invert(var(--Nicon-color));
+} 
 
 .mic-icon button:hover {
   background-color: var(--Nhover-color);

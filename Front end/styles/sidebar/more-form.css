@@ -1,56 +1,78 @@
 :root {
-    --Mtext-color: #000000;
-    --Mmain-color: #ffffff;
-    --Mbutton-color: rgb(244, 244, 244);
-    --Mhover-color: rgb(240, 240, 240);
-    --Micon-color: 0;
-  }
-  
-  .dark-mode {
-    --Mtext-color: whitM;
-    --Mmain-color: #0f0f0f;
-    --Mbutton-color: rgb(42, 42, 42);
-    --Mhover-color: rgba(49, 49, 49, 0.705);
-    --Micon-color: 1;
-  }
-
-.more-form{
-    font-family: "Roboto", "Arial", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    display: flex;
-    color: var(--Mtext-color);
-    padding: 6px 12px 6px;
-    margin: 0;
+  --Mtext-color: #000000;
+  --Mmain-color: #ffffff;
+  --Mbutton-color: rgb(244, 244, 244);
+  --Mhover-color: rgb(240, 240, 240);
+  --Micon-color: 0;
 }
-.more-form-link{
-    display: flex;
-    border-radius: 10px;
-    padding: 0px 10px;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.1s;
-    height: 40px;
-    width: 180px;
-    cursor: pointer;
+
+.dark-mode {
+  --Mtext-color: whitM;
+  --Mmain-color: #0f0f0f;
+  --Mbutton-color: rgb(42, 42, 42);
+  --Mhover-color: rgba(49, 49, 49, 0.705);
+  --Micon-color: 1;
+}
+
+.more-form {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  color: var(--Mtext-color);
+  padding: 6px 12px 6px;
+  margin: 0;
+}
+.more-form-link {
+  display: flex;
+  border-radius: 10px;
+  padding: 0px 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.1s;
+  height: 40px;
+  width: 180px;
+  cursor: pointer;
 }
 .more-form-link div {
-    margin-left: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+  margin-left: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
-.more-form-link:hover{
-    background-color: var(--Mhover-color);
-}
-
-.More-icons{
-    filter: invert(var(--Micon-color));
+.more-form-link:hover {
+  background-color: var(--Mhover-color);
 }
 
-.about div{
-color: rgb(141, 141, 141);
-padding: 10px;
-font-family: "Roboto", "Arial", sans-serif;
-font-size: 13px;
-cursor: pointer;
+.More-icons {
+  filter: invert(var(--Micon-color));
+}
+
+.about {
+  display: flex;
+  width: 230px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.for-ECode-TM {
+  color: rgb(255, 53, 53);
+  margin: 10px;
+  font-size: 20px;
+}
+
+.copy-right {
+  color: rgb(141, 141, 141);
+  margin: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+}
+.skill {
+  color: rgb(141, 141, 141);
+  margin: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: normal;
+  text-align: justify;
 }

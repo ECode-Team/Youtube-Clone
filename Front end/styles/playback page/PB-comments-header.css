@@ -2,6 +2,8 @@
   --Cptext-color: rgb(59, 59, 59);
   --Cpmain-color: #ffffff;
   --Cpbutton-color: rgb(224, 224, 224);
+  --Ccomment-color: rgb(0, 73, 230);
+  --Ccomment-hover-color: rgb(0, 61, 192);
   --Cphover-color: rgb(228, 228, 228);
   --Cpicon-color: 0;
 }
@@ -10,6 +12,8 @@
   --Cptext-color: rgb(197, 197, 197);
   --Cpmain-color: #0f0f0f;
   --Cpbutton-color: rgb(42, 42, 42);
+  --Ccomment-color: rgb(0, 174, 255);
+  --Ccomment-hover-color: rgb(62, 193, 253);
   --Cphover-color: rgb(60, 60, 60);
   --Cpicon-color: 1;
 }
@@ -65,9 +69,21 @@
   border-radius: 20px;
   outline: none;
   font-size: 14px;
-  transition: border 0.3s;
+  transition: border 0.3s ;
 }
 
 .comment-input:focus {
   border: 1px solid #0073e6;
+}
+
+.comment-btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--Ccomment-color);
+}
+
+.comment-btn:hover {
+  background-color: var(--Ccomment-hover-color);
 }
