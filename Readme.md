@@ -12,7 +12,7 @@ This project is a YouTube Clone built with Html Css and Javascript for front end
 
 ## Deployment
 You can access the deployed version of this project:
-- The frontend is deployed on Vercel : [Live Project on Vercel](https://youtube-three-pearl.vercel.app/)
+- The frontend is deployed on Vercel : [Live Project on Cloudflare](https://youtube-27f.pages.dev/)
 - The backend is deployed on [Python anywhere](https://www.pythonanywhere.com)
 
 ## Advanced Features
