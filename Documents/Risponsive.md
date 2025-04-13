@@ -13,77 +13,57 @@ The **YouTube Long & Short Video Grid Responsive System** is a dynamic layout de
 ### HTML Structure
 ```html
 <div class="content-container">
-    <!-- Video Grid Container 1 -->
-    <div class="video-grid" id="videoGrid1">
-        <div class="video-item">Video 1</div>
-        <div class="video-item">Video 2</div>
-    </div>
-    
-    <!-- Shorts Section -->
-    <div class="shorts-container" id="shortsContainer">
-        <div class="short-video">Short 1</div>
-        <div class="short-video">Short 2</div>
-    </div>
-    
-    <!-- Video Grid Container 2 -->
-    <div class="video-grid" id="videoGrid2">
-        <div class="video-item">Video 3</div>
-        <div class="video-item">Video 4</div>
-    </div>
+    <div class="video-grid"></div>
+    <div class="Short-video-container"></div>
 </div>
 ```
 
 ### JavaScript for Dynamic Layout Adjustment
 ```js
 function adjustLayout() {
-    const shortsContainer = document.getElementById("shortsContainer");
-    const shorts = Array.from(shortsContainer.children);
+    // Access to html elements
+    const [container, shortContainer] = [...document.querySelectorAll('.content-container, .Short-video-container')];
+    const screenWith = document.querySelector('.content-container').getBoundingClientRect().width;
 
-    const contentContainer = document.querySelector(".content-container"); // Parent container for rows
-    const allVideos = [...document.querySelectorAll(".video-item")];
+    // Calculate max video/short per row
+    const maxShortPerRow = Math.round(screenWith / 260);
+    const maxLongPerRow = Math.round(screenWith / 370);
 
-    const screenWidth = document.documentElement.getBoundingClientRect().width;
-    const maxVideosPerRow = Math.floor(screenWidth / 300);
-    const maxShortsPerRow = Math.floor(screenWidth / 150);
-
-    // Hide Shorts one by one when reducing screen size
-    shorts.forEach((short, index) => {
-        if (index >= maxShortsPerRow) {
-            short.style.display = "none";
+    // Shorts responsive
+    shortElementsArray.forEach((short, index) => {
+        if (index >= maxShortPerRow) {
+            short.style.display = 'none';
         } else {
-            short.style.display = "flex";
+            short.style.display = 'flex';
         }
     });
 
-    // Clear previous video rows (except shorts row)
-    document.querySelectorAll(".video-grid").forEach(row => row.remove());
+    // Delete video grid for update again
+    document.querySelectorAll('.video-grid').forEach((row) => {
+        row.remove();
+    });
 
-    let rows = [];
-    let currentRow = document.createElement("div");
-    currentRow.classList.add("video-grid");
-    contentContainer.insertBefore(currentRow, shortsContainer); // Insert before shorts
+    // Create video grid and place it top of the short container
+    let currentRow = document.createElement('div');
+    currentRow.classList.add('video-grid');
+    container.insertBefore(currentRow, shortContainer);
 
-    let videosInRow = 0;
-
-    allVideos.forEach((video, index) => {
-        if (videosInRow < maxVideosPerRow) {
+    let videoPerRow = 0;
+    videoElementsArray.forEach((video) => {
+        if (videoPerRow < maxLongPerRow) {
             currentRow.appendChild(video);
-            videosInRow++;
+            videoPerRow++;
         } else {
-            // Create a new row when the previous one is full
-            currentRow = document.createElement("div");
-            currentRow.classList.add("video-grid");
-            contentContainer.appendChild(currentRow); // Add it to container
+            currentRow = document.createElement('div');
+            currentRow.classList.add('video-grid');
+            container.appendChild(currentRow);
             currentRow.appendChild(video);
-            videosInRow = 1;
+            videoPerRow = 1;
         }
     });
 }
 
-// Run on page load and when window resizes
-window.addEventListener("resize", adjustLayout);
-window.addEventListener("load", adjustLayout);
-
+window.addEventListener('resize', adjustLayout);
 ```
 
 ## Benefits

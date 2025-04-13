@@ -19,11 +19,10 @@ You can access the deployed version of this project:
 "Each feature links to its detailed documentation."
 
 - [video grid responsive](Documents/Risponsive.md) - The most complex responsive system for displaying long and short videos dynamically using JavaScript, adjusting layout based on screen size automatically.
-- [Optimized search system](Documents/Search.md) - Uses a 1-second debounce to reduce API calls and improve search efficiency.
 - [thumbnails lazy loading](Documents/LazyLoading.md) - Loads images and videos only when they enter the viewport, reducing initial load time and improving performance. 
 
 ### Other Features :
-- **Video short reels** : Displays short videos in a horizontal scrollable format, optimizing layout for mobile and desktop while ensuring a seamless viewing experience.
+- **Search system** : Uses a 1-second debounce to reduce API calls and improve search efficiency.
 - **Topic bar** : Displays categorized topics dynamically, allowing users to explore content based on their interests.
 - **Comment system** : Allow user to add comments, enhancing engagement on videos.
 - **subscribe system** : user can subscribe the channels and see them in subscription list.
@@ -47,10 +46,10 @@ This project was created by:
 
 ```sh
 # Clone the repository
-git clone 'https://github.com/yasin0121/Youtube.git'
+git clone 'https://github.com/ECode-Team/Youtube-Clone.git'
 
 # Navigate to the project directory
-cd Youtube
+cd Youtube-Clone
 ```
 
 ## Contribute
@@ -58,7 +57,7 @@ cd Youtube
 1. **Fork the Repository**: Click the `Fork` button on the repository page.
 2. **Clone Your Fork**: Clone the forked repository to your local machine.
    ```sh
-   git clone https://github.com/your-username/youtube-clone.git
+   git clone https://github.com/your-username/ECode-Team/Youtube-Clone.git
    ```
 3. **Create a Branch**: Create a new branch for your feature or fix.
    ```sh
